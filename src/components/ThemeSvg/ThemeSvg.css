@@ -1,0 +1,26 @@
+#theme{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    height: 2vw;
+    width: 2vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    right: 7rem;  
+}
+
+  @media screen and (max-width: 980px) {
+ #theme{
+     height: 3vw; 
+     width: 3vw;
+ }
+}
+
+
+  @media screen and (max-width: 570px) {
+      #theme {
+        width: 6.5vw; 
+        height: 6.5vw;
+      }
+}

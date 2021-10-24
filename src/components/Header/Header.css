@@ -1,0 +1,60 @@
+
+
+.cta{
+    text-decoration: underline;
+    
+}
+
+header{
+   top: 0;
+   height: 4.5rem;
+}
+
+ul{
+    line-height: 3.5rem;
+    position: relative;    
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.link{
+    display: flex;
+    flex: 1;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    transform: translateY(50px);
+    will-change: transform;
+    opacity: 0;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.center{
+    justify-content: center;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+
+
+.header-border{
+    height: 1px;   
+    bottom: 0px;
+    width: 100%;
+    transform: scaleX(0);
+    max-width: none;
+    transform-origin: left;
+    position: absolute; 
+}
+
+
+  @media screen and (max-width: 570px) {
+      .m-hide {
+        display: none;
+      }
+}

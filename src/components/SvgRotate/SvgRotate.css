@@ -1,0 +1,32 @@
+#circle {
+  width: 15vw;
+  height: 15vw;
+  font-size: 2rem;
+  animation-name: rotate;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media screen and (max-width: 980px) {
+  #circle {
+    height: 25vw;
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #circle {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}

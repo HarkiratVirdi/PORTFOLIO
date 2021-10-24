@@ -1,0 +1,132 @@
+@import url("https://use.typekit.net/qvn4bvh.css");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  user-select: none;
+  border: none;
+  -webkit-user-drag: none;
+  outline: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeSpeed;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 570px) {
+  /* body{
+    overflow-x: scroll;
+  } */
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+  } */
+
+h1 {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.mb-l {
+  margin-bottom: 4rem;
+}
+.ml-xl {
+  margin-left: 8rem;
+}
+.mt-l {
+  margin-top: 4rem;
+}
+
+.ml-s {
+  margin-left: 1rem;
+}
+.ml-m {
+  margin-left: 3.5rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
+.section-space {
+  margin-bottom: 20rem;
+}
+
+.container {
+  padding: 4rem 6rem 0;
+  margin: 0 auto;
+  /* overflow:hidden; */
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    padding: 2rem 2rem 0;
+  }
+}
+
+@media screen and (max-width: var(--xs-breakpoint)) {
+  .container {
+    padding: 2rem 1rem 0;
+  }
+}
+
+@media screen and (max-width: var(--mobile-breakpoint)) {
+  body,
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: var(--xs-breakpoint)) {
+  body,
+  html {
+    font-size: 30%;
+  }
+}

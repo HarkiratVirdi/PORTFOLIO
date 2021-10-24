@@ -1,0 +1,14 @@
+body {
+  font-family: aktiv-grotesk-extended, sans-serif;
+  font-weight: 400;
+  /* background-color: rgb(40,40,40); */
+  font-style: normal;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* scroll-behavior: smooth; */
+}
+a {
+  /* color: #fff; */
+  font-size: 1.5rem;
+}

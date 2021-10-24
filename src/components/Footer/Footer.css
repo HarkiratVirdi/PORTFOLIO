@@ -1,0 +1,76 @@
+.footer{
+    padding: 4rem 0;
+}
+
+ .form_input{
+    border: none;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    outline: none;
+    width: 40%;
+    font-family:aktiv-grotesk-extended, sans-serif;
+    font-size: 3rem;
+}
+
+.overflow_container{
+    overflow: hidden;
+    display: block;
+}
+
+.form_button button{
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    font-size: 3rem;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    border: 1px solid;
+    background-color: transparent;
+    margin-right: auto;
+    display: block;
+ cursor: pointer;
+
+}
+
+.form_button{
+    display: flex;
+       margin-top: 5rem;
+    
+}
+
+.form_text{
+    font-size: 5vw;
+    font-weight: 400;
+ 
+}
+
+.form_field{
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+}
+
+ @media screen and (max-width: 570px) {
+  .form_text {
+      font-size: 7vw;
+        width: 100%;
+        margin: 1rem 0;
+  }
+
+.form_input{
+        display: block;
+    font-size: 5vw;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.form_button{
+    display: block;
+    margin: 1rem 0;
+    
+}
+
+.socials{
+    margin-top: 3rem;
+}
+}

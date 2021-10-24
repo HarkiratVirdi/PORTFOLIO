@@ -1,0 +1,19 @@
+.about {
+  margin-top: 7rem;
+}
+
+.para {
+  font-size: 5vw;
+  margin-bottom: 4rem;
+  margin-top: 7rem;
+}
+
+@media screen and (max-width: 570px) {
+  .para {
+    font-size: 8vw;
+    margin-top: 0rem;
+  }
+  .about {
+    margin-top: 2rem;
+  }
+}

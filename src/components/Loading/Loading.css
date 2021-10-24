@@ -1,0 +1,35 @@
+/* .loader{
+    background: #000;
+    z-index: 999;
+    top: 0;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* 
+.name{
+ 
+    }
+
+.name div{
+    font-size: 2.5rem;
+    will-change: transform;
+}
+
+.slider{
+    background-color: #282828;
+    will-change: transform;
+    transform-origin: center;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    display: block;
+    transform: scaleY(0);
+    width: 100%;
+    height: 100%;
+    left: 0;
+} */

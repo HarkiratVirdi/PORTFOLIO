@@ -1,0 +1,166 @@
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.project_header {
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 80;
+}
+
+.projectInfo_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gif {
+  height: auto;
+}
+
+aside {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5rem;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+.listed {
+  list-style: inside;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.listed_items {
+  width: 45%;
+}
+
+.text_huge {
+  font-size: 15vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text_huge svg {
+  width: 30%;
+  transform: rotate(90deg);
+}
+
+.projectInfo_name {
+  text-align: center;
+  color: black;
+}
+/* .projectInfo_image {
+  width: 50%;
+  height: 80vh;
+} */
+
+.project_role {
+  font-size: 2rem;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  width: 60%;
+}
+
+.project_role_col {
+  width: auto;
+  margin-right: 5rem;
+}
+
+.proj_desc {
+  width: 60%;
+}
+
+.project_role_col p {
+  white-space: nowrap;
+}
+
+.aside_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .projectInfo .clip-content{ */
+/* font-size: 15vw; */
+/* } */
+
+.container_other {
+  padding: 0 !important;
+  margin: 0;
+}
+
+.m-mt-l {
+  margin-top: 4rem;
+}
+
+.website_link {
+  opacity: 1;
+  color: "black";
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    padding: 0 2rem;
+    height: auto;
+  }
+  aside:nth-of-type(1) {
+    height: 42vh;
+    align-items: flex-end;
+  }
+  aside:nth-of-type(2) {
+    /* height: 60vh; */
+    /* padding: 0; */
+    margin: 5rem 0;
+  }
+  .listed_items {
+    width: 100%;
+  }
+  .project_role {
+    width: 100%;
+    flex-direction: column;
+  }
+  .text_huge {
+    width: 100%;
+    display: block;
+  }
+  .proj_desc {
+    width: 100%;
+  }
+  .aside_content {
+    display: flex;
+    flex-direction: column;
+  }
+  .projectInfo_content {
+    display: block;
+  }
+  .gif {
+    width: 100vw;
+    margin: 5rem 0;
+  }
+  .project_header {
+    /* position: fixed; */
+    top: 15px;
+    /* width: 100%; */
+    padding: 0 2rem;
+  }
+}
