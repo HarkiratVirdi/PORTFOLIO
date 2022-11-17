@@ -5,7 +5,7 @@ import SvgRotate from "../SvgRotate/SvgRotate";
 import ThemeSvg from "../ThemeSvg/ThemeSvg";
 import { ThemeContext } from "../Context/Context";
 import { ContextLang } from "../Context/ContextLang";
-import Resume from "../../Resume_HarkiratSinghVirdi.pdf";
+import Resume from "../../Harkirat_Singh_Resume.pdf";
 
 class Intro extends Component {
   static contextType = ThemeContext;
