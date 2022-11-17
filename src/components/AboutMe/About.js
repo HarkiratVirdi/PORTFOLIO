@@ -26,7 +26,7 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I'm a Full Stack Developer and currently working as a Software Engineer at a Startup."
+                  ? "I'm a Full Stack Developer and currently working as a Software Engineer at InfoSet Consulting."
                   : "Je suis développeur full-stack et je suis en train de travailler comme un développeur logiciel."}
               </div>
 
@@ -38,8 +38,8 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I create projects focused on good UI/UX and continously like to push myself towards excellence."
-                  : "Je crée des projets qui ont un bon design et j'essaye de me pousser vers l'excellence"}
+                  ? "I write clean, readable and maintainable code and continously like to push myself towards excellence."
+                  : "J'écris du code propre, lisible et maintenable et j'aime me pousser continuellement vers l'excellence"}
               </div>
 
               <div
@@ -50,8 +50,8 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I am currently learning Angular to further my front-end Skills."
-                  : "Je suis en train d'apprendre Angular pour que je puisse augmenter mes connaissances."}
+                  ? "I am currently learning C# to further my development skills."
+                  : "Je suis en train d'apprendre C# pour que je puisse augmenter mes connaissances."}
               </div>
 
               <div
@@ -62,7 +62,7 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "When I'm not coding, you can find me in park or learning French."
+                  ? "When I'm not coding, you can find me in park or learning french."
                   : "Quand je suis libre, je fais du sport dans le parc ou j'apprende la langue française."}
               </div>
             </div>
