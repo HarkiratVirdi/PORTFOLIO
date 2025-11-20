@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import "./about.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { ContextLang } from "../Context/ContextLang";
+import React, { Component } from 'react';
+import './about.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { ContextLang } from '../Context/ContextLang';
 
 class About extends Component {
   constructor(props) {
@@ -26,8 +26,8 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I'm a Frontend Developer and currently working as a Software Engineer II at S&P Global."
-                  : "Je suis développeur frontend et je suis en train de travailler comme un développeur logiciel."}
+                  ? "I'm a Frontend Developer and currently working as a Senior Software Engineer at S&P Global."
+                  : 'Je suis développeur frontend et je suis en train de travailler comme un développeur logiciel senior.'}
               </div>
 
               <div
@@ -38,7 +38,7 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I write clean, readable and maintainable code and continously like to push myself towards excellence."
+                  ? 'I write clean, readable and maintainable code and continously like to push myself towards excellence.'
                   : "J'écris du code propre, lisible et maintenable et j'aime me pousser continuellement vers l'excellence"}
               </div>
 
@@ -50,7 +50,7 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I am currently learning C# to further my development skills."
+                  ? 'I am currently learning C# to further my development skills.'
                   : "Je suis en train d'apprendre C# pour que je puisse augmenter mes connaissances."}
               </div>
 
