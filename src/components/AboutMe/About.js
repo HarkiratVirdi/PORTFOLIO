@@ -50,8 +50,8 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? 'I am currently learning C# to further my development skills.'
-                  : "Je suis en train d'apprendre C# pour que je puisse augmenter mes connaissances."}
+                  ? 'I am currently learning AI and automation for shipping and developing quality products.'
+                  : 'J’apprends actuellement à utiliser l’intelligence artificielle et l’automatisation pour développer et livrer des produits de qualité.'}
               </div>
 
               <div
