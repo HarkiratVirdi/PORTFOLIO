@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import "./Intro.css";
-import ClipText from "../ClipText/ClipText";
-import SvgRotate from "../SvgRotate/SvgRotate";
-import ThemeSvg from "../ThemeSvg/ThemeSvg";
-import { ThemeContext } from "../Context/Context";
-import { ContextLang } from "../Context/ContextLang";
-import Resume from "../../Harkirat_Singh_Resume.pdf";
+import React, { Component } from 'react';
+import './Intro.css';
+import ClipText from '../ClipText/ClipText';
+import SvgRotate from '../SvgRotate/SvgRotate';
+import ThemeSvg from '../ThemeSvg/ThemeSvg';
+import { ThemeContext } from '../Context/Context';
+import { ContextLang } from '../Context/ContextLang';
+import Resume from '../../Harkirat_Singh_Resume.pdf';
 
 class Intro extends Component {
   static contextType = ThemeContext;
@@ -25,10 +25,9 @@ class Intro extends Component {
                   color: colorProperty,
                 }}
               >
-                <ClipText>{isEnglish ? "Interactive" : "Interactif "}</ClipText>
-                <ClipText>{isEnglish ? "Designer &" : "Créateur &"}</ClipText>
-                <ClipText>{isEnglish ? "Developer" : "Développeur"}</ClipText>
-
+                <ClipText>{isEnglish ? 'Full Stack' : 'Ingénieur'}</ClipText>
+                <ClipText>{isEnglish ? 'Software' : 'Logiciel'}</ClipText>
+                <ClipText>{isEnglish ? 'Engineer' : 'Full Stack'}</ClipText>
                 <div className="important_links mt-l">
                   <a
                     style={{ color: colorProperty }}
@@ -71,8 +70,8 @@ class Intro extends Component {
               <div className="all-svg">
                 <SvgRotate>
                   {isEnglish
-                    ? "Scroll - Down - Theme - Changer"
-                    : "Glissez -vers - le - bas - Le thème"}
+                    ? 'Scroll - Down - Theme - Changer'
+                    : 'Glissez -vers - le - bas - Le thème'}
                   -
                 </SvgRotate>
                 <ThemeSvg />

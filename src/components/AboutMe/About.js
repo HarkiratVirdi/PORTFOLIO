@@ -26,8 +26,8 @@ class About extends Component {
                 data-aos-easing="ease"
               >
                 {isEnglish
-                  ? "I'm a Frontend Developer and currently working as a Senior Software Engineer at S&P Global."
-                  : 'Je suis développeur frontend et je suis en train de travailler comme un développeur logiciel senior.'}
+                  ? "I'm currently working as a Senior Software Engineer at S&P Global."
+                  : 'Je suis en train de travailler comme un développeur logiciel senior.'}
               </div>
 
               <div

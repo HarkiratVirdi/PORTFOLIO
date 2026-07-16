@@ -1,45 +1,45 @@
-import React, { Component } from "react";
-import emailjs from "emailjs-com";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "./Footer.css";
-import { ThemeContext } from "../Context/Context";
-import ClipText from "../ClipText/ClipText";
-import { ContextLang } from "../Context/ContextLang";
+import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import './Footer.css';
+import { ThemeContext } from '../Context/Context';
+import ClipText from '../ClipText/ClipText';
+import { ContextLang } from '../Context/ContextLang';
 
 class Footer extends Component {
   static contextType = ThemeContext;
   constructor(props) {
     super(props);
-    this.state = { personName: "", personEmail: "", personMessage: "" };
+    this.state = { personName: '', personEmail: '', personMessage: '' };
     AOS.init();
   }
 
   submitMessage = (e) => {
-    const button = document.querySelector(".form_submit_button");
+    const button = document.querySelector('.form_submit_button');
     e.preventDefault();
 
-    button.innerHTML = "Finding Harkirat...";
-    button.style.animation = "bounce 0.75s alternate ease-in-out infinite";
+    button.innerHTML = 'Finding Harkirat...';
+    button.style.animation = 'bounce 0.75s alternate ease-in-out infinite';
 
     emailjs
       .sendForm(
-        "service_2m6gdxl",
-        "template_pz4cejs",
+        'service_2m6gdxl',
+        'template_pz4cejs',
         e.target,
-        "user_r95YKZAAuhO4p6roegGgJ"
+        'user_r95YKZAAuhO4p6roegGgJ',
       )
       .then((res) => {
-        button.style.animation = "";
-        button.innerHTML = "Message Sent!";
-        Array.from(document.querySelectorAll("input")).map(
-          (el) => (el.value = "")
+        button.style.animation = '';
+        button.innerHTML = 'Message Sent!';
+        Array.from(document.querySelectorAll('input')).map(
+          (el) => (el.value = ''),
         );
 
         setTimeout(() => {
-          button.style.backgroundColor = "";
-          button.innerHTML = "Send";
-          this.setState({ personEmail: "", personMessage: "", personName: "" });
+          button.style.backgroundColor = '';
+          button.innerHTML = 'Send';
+          this.setState({ personEmail: '', personMessage: '', personName: '' });
         }, 3200);
       });
   };
@@ -74,14 +74,14 @@ class Footer extends Component {
                   data-aos-easing="ease"
                 >
                   <h1 className="form_text">
-                    {isEnglish ? "Hello," : "Bonjour,"}
+                    {isEnglish ? 'Hello,' : 'Bonjour,'}
                   </h1>
 
                   <div className="form_field">
                     <h1 className="form_text">
-                      {isEnglish ? "My name is" : "Je m'appelle"}
+                      {isEnglish ? 'My name is' : "Je m'appelle"}
                       <input
-                        style={{ color: isLightTheme ? "black" : "white" }}
+                        style={{ color: isLightTheme ? 'black' : 'white' }}
                         name="personName"
                         autoComplete="off"
                         type="text"
@@ -89,15 +89,15 @@ class Footer extends Component {
                         className="form_input"
                         required
                         onChange={this.onChangeHandler}
-                      />{" "}
+                      />{' '}
                     </h1>
                   </div>
 
                   <div className="form_field">
                     <h1 className="form_text">
-                      {isEnglish ? "Here is my email" : "Mon email est"}
+                      {isEnglish ? 'Here is my email' : 'Mon email est'}
                       <input
-                        style={{ color: isLightTheme ? "black" : "white" }}
+                        style={{ color: isLightTheme ? 'black' : 'white' }}
                         name="personEmail"
                         autoComplete="off"
                         className="form_input"
@@ -105,15 +105,15 @@ class Footer extends Component {
                         value={this.state.personEmail}
                         onChange={this.onChangeHandler}
                         required
-                      />{" "}
+                      />{' '}
                     </h1>
                   </div>
 
                   <div className="form_field">
                     <h1 className="form_text">
-                      {isEnglish ? "Let's talk about" : "Parlons de"}
+                      {isEnglish ? "Let's talk about" : 'Parlons de'}
                       <input
-                        style={{ color: isLightTheme ? "black" : "white" }}
+                        style={{ color: isLightTheme ? 'black' : 'white' }}
                         className="form_input"
                         name="personMessage"
                         autoComplete="off"
@@ -121,41 +121,35 @@ class Footer extends Component {
                         value={this.state.personMessage}
                         onChange={this.onChangeHandler}
                         required
-                      />{" "}
+                      />{' '}
                     </h1>
                   </div>
                 </div>
                 <div className="form_button">
                   <button
-                    style={{ color: isLightTheme ? "black" : "white" }}
+                    style={{ color: isLightTheme ? 'black' : 'white' }}
                     class="form_submit_button"
                     type="submit"
                   >
-                    {isEnglish ? "Send" : "Envoyez"}
+                    {isEnglish ? 'Send' : 'Envoyez'}
                   </button>
                   <div className="socials">
                     <h1 className="form_text">
-                      {" "}
-                      {isEnglish ? "Follow Me" : "Suivez moi"}
+                      {' '}
+                      {isEnglish ? 'Follow Me' : 'Suivez moi'}
                     </h1>
                     <div>
                       <a
-                        style={{ color: isLightTheme ? "black" : "white" }}
+                        style={{ color: isLightTheme ? 'black' : 'white' }}
                         href="https://www.linkedin.com/in/harkirat-singh-8254a21b4/"
                       >
                         <h1 className="form_text"> Linkedin</h1>
                       </a>
                       <a
-                        style={{ color: isLightTheme ? "black" : "white" }}
+                        style={{ color: isLightTheme ? 'black' : 'white' }}
                         href="https://github.com/harkiratvirdi"
                       >
                         <h1 className="form_text">Github</h1>
-                      </a>
-                      <a
-                        style={{ color: isLightTheme ? "black" : "white" }}
-                        href="https://www.instagram.com/harkirat_singh_virdi/"
-                      >
-                        <h1 className="form_text">Instagram</h1>
                       </a>
                     </div>
                   </div>
