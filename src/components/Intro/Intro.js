@@ -31,16 +31,6 @@ class Intro extends Component {
                 <div className="important_links mt-l">
                   <a
                     style={{ color: colorProperty }}
-                    href={Resume}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="underline resume"
-                    download
-                  >
-                    Resume
-                  </a>
-                  <a
-                    style={{ color: colorProperty }}
                     href="https://www.linkedin.com/in/harkirat-singh-8254a21b4/"
                     target="_blank"
                     rel="noreferrer"
